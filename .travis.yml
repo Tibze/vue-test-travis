@@ -16,4 +16,4 @@ deploy:
   app: vue-test-travis
   on: master
 notifications:
-  slack: slack: tibstudio:hsmiSPDBtlNNu3BCF65SGLy6
+  slack: tibstudio:hsmiSPDBtlNNu3BCF65SGLy6
