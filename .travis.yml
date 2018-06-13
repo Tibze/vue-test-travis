@@ -8,10 +8,13 @@ script:
 - yarn lint
 - yarn unit
 - yarn build
+before_deploy:
+  - cd ./dist
 deploy:
   provider: heroku
   api_key:
     secure: L5wxp1bObEWpVjWZKlJUCWPAfShqu366d/1YT+BnT1MaY68UPlbQnYifkciO/4h7zBBoOrWKNdHEZ9Ng1A46+OsEFxW0z1Xnwgl/JRFrjK0kB+x/pJk/duD/HBmgVZcimH9BBajwLq1mtOo/mpxiuQFzKvPNLbaLDSjugXtG1/oP2tunVT6f22lKy1vbf4PSk1TIco+0yMVDBqHpbUYctjIJ5M1O+Qv1Dhl5bkPfw+Hr6jhmB2yCEMW92fbJpRmXE5kyyyitMDWvZ4/cmQRU02fIoOlWWmyBpZh2Q/nm7RPvWYvPGboQaJw/Rc6IjTqdUZxpNYytnVlLfTZFhlVIQiEcFzhA0ySeIz6v7CYThdLoZUjKZhasAaUZPn8eU1+v6pl0MD7LG0gCdwrE4+RqfyQJhRkV+v5g2jc8BBYbRjxNEOZ5RIaAmMCmLezLTRY0Asnpo9axO/uxbARiEkvYMk+HGxVxdkIAUXejlyIK7DVcDTAf+4pD8DmUMgxJY+aauoUwOHjInEVUFxDyi20CT7berAyMwtAg4CSLqiWT8Peg+zx3b6pqirsad3MNWuSvIs0p8eSXuqevNb6NRCrVrNRym9ylXOrsBM8UZmLpOLbUIL9tSZ5AxcDUKeGtDkUCZ3/j3FwKSS2SWJlR+iRjS+R+fS8lg9Mw2jWNbzz3Kes=
+  skip_cleanup: true
   app: vue-test-travis
   on:
     repo: Tibze/vue-test-travis
