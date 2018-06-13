@@ -4,8 +4,6 @@ node_js:
 cache:
   directories:
   - node_modules
-before_script:
-- rm -rf dist/
 script:
 - yarn lint
 - yarn unit
