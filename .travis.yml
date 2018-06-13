@@ -19,4 +19,3 @@ notifications:
   slack:
     rooms:
       - tibstudio:hsmiSPDBtlNNu3BCF65SGLy6#deploy
-      - tibstudio:hsmiSPDBtlNNu3BCF65SGLy6#general
