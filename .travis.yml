@@ -7,7 +7,7 @@ cache:
 script:
     - yarn lint
     - yarn unit
-    -yarn build
+    - yarn build
 deploy:
   provider: pages
   skip_cleanup: true
