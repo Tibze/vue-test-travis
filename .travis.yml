@@ -8,8 +8,6 @@ script:
 - yarn lint
 - yarn unit
 - yarn build
-before_deploy:
-  - cd ./dist
 deploy:
   provider: heroku
   api_key:
